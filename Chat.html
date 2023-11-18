@@ -9,8 +9,35 @@
 
 <body>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger intent="WELCOME" chat-title="ChatBot" agent-id="9e2e1032-cbd8-4a9f-a77b-e71d377aa03a"
+    <df-messenger intent="WELCOME" chat-title="ChatBot" expand agent-id="9e2e1032-cbd8-4a9f-a77b-e71d377aa03a"
         language-code="pt-br"></df-messenger>
+        
+        <style>
+            df-messenger {
+                --df-messenger-bot-message: #003296;
+                --df-messenger-button-titlebar-color: #271d02;
+                --df-messenger-chat-background-color: #fafafa;
+                --df-messenger-font-color: #fafafa;
+                --df-messenger-send-icon: #0077ff;
+                --df-messenger-user-message: #003296;
+    
+    
+                justify-content: center;
+                margin: 0 35% 0 40px;
+                padding: 0;
+                position: fixed;
+                right: 0;
+                transform: translateX(50%) translateY(50%);
+                bottom: -90px;
+    
+    
+                @media(max-width: 768px) {
+                    margin: 0;
+                    position: relative;
+                }
+    
+            }
+        </style>
 </body>
 
 </html>
